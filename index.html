@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="PersonaTalk create personalized lip-sync dubbing videos.">
+  <meta name="keywords" content="Animation, Attention, Visual Dubbing">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>PersonaTalk: Bring Attention to Your Persona in Visual Dubbing</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -42,7 +42,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -80,7 +80,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,39 +88,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">PersonaTalk: Bring Attention to Your Persona in Visual Dubbing</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=qkJD6c0AAAAJ">Longhao Zhang</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="">Shuang Liang</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="">Zhipeng Ge</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?hl=en&user=BIixVT0AAAAJ">Tianshu Hu</a><sup>#</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <!-- <span class="author-block"><sup>1</sup>University of Washington,</span> -->
+            <span class="author-block">Bytedance</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block"><sup>1</sup>University of Washington,</span> -->
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            <span class="author-block"><sup>#</sup>Project Lead</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -129,7 +128,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -139,7 +138,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -149,7 +148,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -158,14 +157,14 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+<!--               <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -178,33 +177,47 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <div class="columns is-centered">
+        <div class="teaser1">
+          <div class="column content">
+            <!-- <video id="teaser1" autoplay controls muted loop playsinline height="100%"> -->
+            <video id="teaser1" controls playsinline height="100%">
+              <source src="./static/videos/teaser1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="teaser2">
+          <div class="column content">
+            <video id="teaser2" controls playsinline height="100%">
+              <source src="./static/videos/teaser2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">PersonaTalk</span> creates lip-sync visual dubbing while preserving indivisuals' talking style and facial details.
       </h2>
     </div>
   </div>
 </section>
 
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+        <div class="item-teaser1">
+          <video poster="" id="teaser1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/teaser1.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+        <div class="item item-teaser2">
+          <video poster="" id="teaser2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/teaser2.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -248,7 +261,7 @@
     </div>
   </div>
 </section>
-
+ -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -258,39 +271,49 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            For audio-driven visual dubbing, it remains a considerable challenge to uphold
+            and highlight speaker’s <i>"persona"</i> while synthesizing accurate lip synchronization. 
+            Existing methods fall short of capturing speaker’s unique speakingstyle or preserving 
+            facial details.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            In this paper, we present <span class="dnerf">PersonaTalk</span>, an attention-based 
+            two-stage framework, including geometry construction and face rendering, for high-fidelity 
+            and personalized visual dubbing. In the first stage, we propose a style-aware audio 
+            encoding module that injects speaking style into audio features through a cross-attention 
+            layer. The stylized audio features are then used to drive speaker’s template geometry to 
+            obtain lip-synced geometries. In the second stage, a dual-attention face renderer is 
+            introduced to render textures for the target geometries. It consists of two parallel 
+            cross-attention layers, namely Lip-Attention and Face-Attention, which respectively sample 
+            textures from different reference frames to render the entire face. With our innovative 
+            design, intricate facial details can be well preserved. Comprehensive experiments and user 
+            studies demonstrate our advantages over other state-of-the-art methods in terms of visual 
+            quality, lip-sync accuracy and persona preservation. Furthermore, as a person-generic framework, 
+            <span class="dnerf">PersonaTalk</span> can achieve competitive performance as state-of-the-art 
+            person-specific methods.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
+    <!-- Method Illustration. -->
     <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Image</h2> -->
+        <img src="./static/images/schematic.png"
+         class="interpolation-image"
+         alt="Interpolate start reference image."/>
+        <p>
+        Schematic Illustration. Our proposed method is an attention-based two-stage framework consisting of geometry construction 
+        and face rendering.
+        </p>
+      </div>
+    </div>
+    <!--/ Method Illustration. -->
+
+    <!-- Paper video. -->
+<!--     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -298,7 +321,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -306,11 +329,154 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <h2 class="title is-3">Qualitative Comparison</h2>
 
-    <div class="columns is-centered">
+      <!-- Comparing with Person-Agnostic Methods. -->
+      <h2 class="title is-4">Comparing with Person-Agnostic Methods</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="agnostic" controls playsinline height="100%">
+            <source src="./static/videos/agnostic.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- Comparing with Person-Agnostic Methods. -->
+
+      <!-- Comparing with Person-Specific Methods. -->
+      <h2 class="title is-4">Comparing with Person-Specific Methods</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="specific" controls playsinline height="100%">
+            <source src="./static/videos/specific.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- Comparing with Person-Specific Methods. -->
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">More Demos</h2>
+
+      <!-- Multilingual Translation. -->
+      <h2 class="title is-4">Multilingual Translation</h2>
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+          <video id="taylor-en" controls playsinline height="100%">
+            <source src="./static/videos/taylor-template.mp4"
+                    type="video/mp4">
+          </video>
+          <p> English (Original)</p>
+        </div>
+
+        <div class="column content has-text-centered">
+          <video id="taylor-cn" controls playsinline height="100%">
+            <source src="./static/videos/taylor-template-cn_sr.mp4"
+                    type="video/mp4">
+          </video>
+          <p class="is-bold"> Chinese </p>
+        </div>
+
+        <div class="column content has-text-centered">
+          <video id="taylor-de" controls playsinline height="100%">
+            <source src="./static/videos/taylor-template-de_sr.mp4"
+                    type="video/mp4">
+          </video>
+          <p class="is-bold"> German </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+          <video id="jakie" controls playsinline height="100%">
+            <source src="./static/videos/jakiechan.mp4"
+                    type="video/mp4">
+          </video>
+          <p> English (Original)</p>
+        </div>
+
+        <div class="column content has-text-centered">
+          <video id="jakie-fr" controls playsinline height="100%">
+            <source src="./static/videos/jakiechan.mp4.fr.mp4"
+                    type="video/mp4">
+          </video>
+          <p class="is-bold"> French </p>
+        </div>
+
+        <div class="column content has-text-centered">
+          <video id="jakie-ja" controls playsinline height="100%">
+            <source src="./static/videos/jakiechan.mp4.ja.mp4"
+                    type="video/mp4">
+          </video>
+          <p class="is-bold"> Japanese </p>
+        </div>
+      </div>
+      <!-- Multilingual Translation. -->
+
+      <!-- Open Online Course. -->
+      <h2 class="title is-4">Open Online Courses</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="ng-concat" controls playsinline height="100%">
+            <source src="./static/videos/ng-concat.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="bengio-concat" controls playsinline height="100%">
+            <source src="./static/videos/bengio-concat.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- Open Online Course. -->
+
+      <!-- Animation. -->
+      <h2 class="title is-4">Animation</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="22-concat" controls playsinline height="100%">
+            <source src="./static/videos/22-concat.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column content">
+          <video id="33-concat" controls playsinline height="100%">
+            <source src="./static/videos/33-concat.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="11-concat" controls playsinline height="100%">
+            <source src="./static/videos/11-concat-resize.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column content">
+          <video id="44-concat" controls playsinline height="100%">
+            <source src="./static/videos/55-concat-resize.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- Animation. -->
+
+
 
       <!-- Visual Effects. -->
-      <div class="column">
+<!--       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -322,11 +488,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+<!--       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -342,16 +508,16 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+<!--     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+<!--         <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -381,11 +547,11 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+<!--         <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -402,16 +568,16 @@
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+<!--       </div>
+    </div> -->
     <!--/ Animation. -->
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+<!--     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -434,14 +600,16 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+
+
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -451,10 +619,30 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is built using the 
+            <a rel="license" href="https://github.com/nerfies/nerfies.github.io">Academic Project Page Template</a>.
+            We would like to thank  <a href="https://nerfies.github.io/">Nerfies</a> for providing the source code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+<!-- <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
@@ -487,4 +675,4 @@
 </footer>
 
 </body>
-</html>
+</html> -->
